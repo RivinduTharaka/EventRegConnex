@@ -40,14 +40,13 @@ function Home() {
                         variant="contained"
                         color="primary"
                         sx={{
-                            padding: '8px 20px', // Increase padding for a larger button
-                            fontSize: '1rem',    // Increase font size
-                            width: '70%',         // Make the button full-width (optional)
+                            padding: '12px 24px', // Increase padding for a larger button
+                            fontSize: '1.2rem',    // Increase font size
+                            width: '70%',
                         }}
                     >
                         Submit
                     </Button>
-
                 </form>
             ) : (
                 <Card
@@ -57,18 +56,18 @@ function Home() {
                         p: 3,
                         boxShadow: 3,
                         borderRadius: 3,
-                        bgcolor: 'linear-gradient(135deg, #4e54c8, #8f94fb)',
+                        background: 'linear-gradient(135deg, #4e54c8, #8f94fb)', // Use "background" for gradient
                     }}
                 >
                     <CardContent>
                         <Typography variant="h5" component="div" sx={{ color: 'white', fontWeight: 'bold' }}>
-                            Premium Member
+                           Vistor Login
                         </Typography>
                         <Typography sx={{ mt: 1, color: 'white' }}>
                             User ID: {userId}
                         </Typography>
                         <Typography sx={{ mt: 2, color: 'white' }}>
-                            Congratulations! You now have access to premium features:
+                            Congratulations! You now have access to join the session:
                         </Typography>
                         <ul style={{ color: 'white', paddingLeft: '1.2em' }}>
                             <li>Unlimited Access</li>
